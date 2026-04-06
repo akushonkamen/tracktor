@@ -11,7 +11,7 @@ const planeTheme = create({
   base: "dark",
   brandTitle: "Plane UI",
   brandUrl: "https://plane.so",
-  brandImage: "plane-lockup-light.svg",
+  brandImage: "tracktor-lockup-light.svg",
   brandTarget: "_self",
 });
 
