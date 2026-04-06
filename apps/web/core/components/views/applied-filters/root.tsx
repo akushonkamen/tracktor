@@ -4,12 +4,12 @@
  * See the LICENSE file for details.
  */
 
-import { useTranslation } from "@plane/i18n";
-import { CloseIcon } from "@plane/propel/icons";
+import { useTranslation } from "@tracktor/i18n";
+import { CloseIcon } from "@tracktor/propel/icons";
 // plane imports
-import type { EViewAccess, TViewFilterProps } from "@plane/types";
-import { Tag } from "@plane/ui";
-import { replaceUnderscoreIfSnakeCase } from "@plane/utils";
+import type { EViewAccess, TViewFilterProps } from "@tracktor/types";
+import { Tag } from "@tracktor/ui";
+import { replaceUnderscoreIfSnakeCase } from "@tracktor/utils";
 // components
 import { AppliedDateFilters } from "@/components/common/applied-filters/date";
 import { AppliedMembersFilters } from "@/components/common/applied-filters/members";
@@ -23,7 +23,7 @@ type Props = {
   alwaysAllowEditing?: boolean;
 };
 
-const MEMBERS_FILTERS = ["owned_by"];
+const MEMBERS_FILTERS = new Set(["owned_by"]);
 const DATE_FILTERS = ["created_at"];
 const VIEW_ACCESS_FILTERS = ["view_type"];
 
@@ -61,7 +61,7 @@ export function ViewAppliedFiltersList(props: Props) {
                 values={Array.isArray(value) ? (value as string[]) : []}
               />
             )}
-            {MEMBERS_FILTERS.includes(filterKey) && (
+            {MEMBERS_FILTERS.has(filterKey) && (
               <AppliedMembersFilters
                 editable={isEditingAllowed}
                 handleRemove={(val) => handleRemoveFilter(filterKey, val)}

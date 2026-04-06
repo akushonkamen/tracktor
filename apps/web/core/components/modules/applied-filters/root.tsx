@@ -4,12 +4,12 @@
  * See the LICENSE file for details.
  */
 
-import { useTranslation } from "@plane/i18n";
-import { CloseIcon } from "@plane/propel/icons";
-import type { TModuleDisplayFilters, TModuleFilters } from "@plane/types";
+import { useTranslation } from "@tracktor/i18n";
+import { CloseIcon } from "@tracktor/propel/icons";
+import type { TModuleDisplayFilters, TModuleFilters } from "@tracktor/types";
 // components
-import { Header, EHeaderVariant, Tag } from "@plane/ui";
-import { replaceUnderscoreIfSnakeCase } from "@plane/utils";
+import { Header, EHeaderVariant, Tag } from "@tracktor/ui";
+import { replaceUnderscoreIfSnakeCase } from "@tracktor/utils";
 import { AppliedDateFilters, AppliedMembersFilters, AppliedStatusFilters } from "@/components/modules";
 // helpers
 // types
@@ -24,7 +24,7 @@ type Props = {
   isArchived?: boolean;
 };
 
-const MEMBERS_FILTERS = ["lead", "members"];
+const MEMBERS_FILTERS = new Set(["lead", "members"]);
 const DATE_FILTERS = ["start_date", "target_date"];
 
 export function ModuleAppliedFiltersList(props: Props) {
@@ -71,7 +71,7 @@ export function ModuleAppliedFiltersList(props: Props) {
                     values={value}
                   />
                 )}
-                {MEMBERS_FILTERS.includes(filterKey) && (
+                {MEMBERS_FILTERS.has(filterKey) && (
                   <AppliedMembersFilters
                     editable={isEditingAllowed}
                     handleRemove={(val) => handleRemoveFilter(filterKey, val)}

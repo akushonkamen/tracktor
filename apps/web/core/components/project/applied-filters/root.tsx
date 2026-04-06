@@ -4,13 +4,13 @@
  * See the LICENSE file for details.
  */
 
-import { useTranslation } from "@plane/i18n";
-import { CloseIcon } from "@plane/propel/icons";
+import { useTranslation } from "@tracktor/i18n";
+import { CloseIcon } from "@tracktor/propel/icons";
 // plane imports
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TProjectAppliedDisplayFilterKeys, TProjectFilters } from "@plane/types";
-import { EHeaderVariant, Header, Tag } from "@plane/ui";
-import { replaceUnderscoreIfSnakeCase } from "@plane/utils";
+import { Tooltip } from "@tracktor/propel/tooltip";
+import type { TProjectAppliedDisplayFilterKeys, TProjectFilters } from "@tracktor/types";
+import { EHeaderVariant, Header, Tag } from "@tracktor/ui";
+import { replaceUnderscoreIfSnakeCase } from "@tracktor/utils";
 // local imports
 import { AppliedAccessFilters } from "./access";
 import { AppliedDateFilters } from "./date";
@@ -28,7 +28,7 @@ type Props = {
   totalProjects: number;
 };
 
-const MEMBERS_FILTERS = ["lead", "members"];
+const MEMBERS_FILTERS = new Set(["lead", "members"]);
 const DATE_FILTERS = ["created_at"];
 
 export function ProjectAppliedFiltersList(props: Props) {
@@ -76,7 +76,7 @@ export function ProjectAppliedFiltersList(props: Props) {
                   values={value}
                 />
               )}
-              {MEMBERS_FILTERS.includes(filterKey) && (
+              {MEMBERS_FILTERS.has(filterKey) && (
                 <AppliedMembersFilters
                   editable={isEditingAllowed}
                   handleRemove={(val) => handleRemoveFilter(filterKey, val)}
