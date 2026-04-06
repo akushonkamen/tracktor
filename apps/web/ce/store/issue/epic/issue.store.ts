@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Tracktor Contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -14,8 +14,4 @@ import type { IProjectEpicsFilter } from "./filter.store";
 export type IProjectEpics = IProjectIssues;
 
 // @ts-nocheck - This class will never be used, extending similar class to avoid type errors
-export class ProjectEpics extends ProjectIssues implements IProjectEpics {
-  constructor(_rootStore: IIssueRootStore, issueFilterStore: IProjectEpicsFilter) {
-    super(_rootStore, issueFilterStore);
-  }
-}
+export class ProjectEpics extends ProjectIssues implements IProjectEpics {}

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Tracktor Contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -47,7 +47,7 @@ export function SelectRepository(props: Props) {
 
   const { data: paginatedData, size, setSize, isValidating } = useSWRInfinite(getKey, fetchGithubRepos);
 
-  let userRepositories = (paginatedData ?? []).map((data) => data.repositories).flat();
+  let userRepositories = (paginatedData ?? []).flatMap((data) => data.repositories);
   userRepositories = userRepositories.filter((data) => data?.id);
 
   const totalCount = paginatedData && paginatedData.length > 0 ? paginatedData[0].total_count : 0;

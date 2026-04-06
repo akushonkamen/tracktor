@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Tracktor Contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -37,7 +37,6 @@ export function ColorPicker(props: ColorPickerProps) {
         value={value}
         onChange={(e) => onChange(e.target.value)}
         className="invisible absolute inset-0 size-4"
-        aria-hidden="true"
       />
     </div>
   );

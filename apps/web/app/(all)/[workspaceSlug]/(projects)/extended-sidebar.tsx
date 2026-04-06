@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Tracktor Contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -48,7 +48,7 @@ export const ExtendedAppSidebar = observer(function ExtendedAppSidebar() {
           is_pinned: preference?.is_pinned ?? false,
         };
       })
-      .sort((a, b) => {
+      .toSorted((a, b) => {
         // First sort by pinned status (pinned items first)
         if (a.is_pinned !== b.is_pinned) {
           return b.is_pinned ? 1 : -1;
