@@ -2,7 +2,7 @@
   "name": "@plane/editor",
   "version": "1.3.0",
   "private": true,
-  "description": "Core Editor that powers Plane",
+  "description": "Core Editor that powers Tracktor",
   "keywords": [
     "editor",
     "markdown",

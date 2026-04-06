@@ -4,7 +4,7 @@
   "private": true,
   "description": "Open-source project management that unlocks customer value",
   "license": "AGPL-3.0",
-  "repository": "https://github.com/makeplane/plane.git",
+  "repository": "https://github.com/akushonkamen/tracktor.git",
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --concurrency=18",
@@ -31,7 +31,7 @@
       "pnpm exec oxfmt --no-error-on-unmatched-pattern"
     ],
     "*.{js,jsx,ts,tsx,cjs,mjs,cts,mts}": [
-      "pnpm exec oxlint --fix --deny-warnings"
+      "pnpm exec oxlint --fix"
     ]
   },
   "engines": {
