@@ -410,7 +410,7 @@ export default {
   full_changelog: "Tam Değişiklik Kaydı",
   support: "Destek",
   forum: "Forum",
-  powered_by_plane_pages: "Plane Pages tarafından desteklenmektedir",
+  powered_by_plane_pages: "Tracktor Pages tarafından desteklenmektedir",
   please_select_at_least_one_invitation: "Lütfen en az bir davet seçin.",
   please_select_at_least_one_invitation_description: "Çalışma alanına katılmak için lütfen en az bir davet seçin.",
   we_see_that_someone_has_invited_you_to_join_a_workspace: "Birinin sizi bir çalışma alanına davet ettiğini görüyoruz",
@@ -1583,7 +1583,7 @@ export default {
     page_label: "{workspace} - Genel ayarlar",
     key_created: "Anahtar oluşturuldu",
     copy_key:
-      "Bu gizli anahtarı Plane Pages'e kopyalayıp kaydedin. Kapat düğmesine bastıktan sonra bu anahtarı göremezsiniz. Anahtar içeren bir CSV dosyası indirildi.",
+      "Bu gizli anahtarı Tracktor Pages'e kopyalayıp kaydedin. Kapat düğmesine bastıktan sonra bu anahtarı göremezsiniz. Anahtar içeren bir CSV dosyası indirildi.",
     token_copied: "Token panoya kopyalandı.",
     settings: {
       general: {
@@ -2144,7 +2144,7 @@ export default {
           comic: {
             title: "İş öğeleri Plane'de yapı taşlarıdır.",
             description:
-              "Plane UI'yi yeniden tasarlamak, şirketi yeniden markalaştırmak veya yeni yakıt enjeksiyon sistemini başlatmak, muhtemelen alt iş öğeleri olan iş öğesi örnekleridir.",
+              "Tracktor UI'yi yeniden tasarlamak, şirketi yeniden markalaştırmak veya yeni yakıt enjeksiyon sistemini başlatmak, muhtemelen alt iş öğeleri olan iş öğesi örnekleridir.",
           },
         },
       },

@@ -416,7 +416,7 @@ export default {
   full_changelog: "Journal des modifications complet",
   support: "Support",
   forum: "Forum",
-  powered_by_plane_pages: "Propulsé par Plane Pages",
+  powered_by_plane_pages: "Propulsé par Tracktor Pages",
   please_select_at_least_one_invitation: "Veuillez sélectionner au moins une invitation.",
   please_select_at_least_one_invitation_description:
     "Veuillez sélectionner au moins une invitation pour rejoindre l’espace de travail.",
@@ -1595,7 +1595,7 @@ export default {
     page_label: "{workspace} - Paramètres généraux",
     key_created: "Clé créée",
     copy_key:
-      "Copiez et sauvegardez cette clé secrète dans Plane Pages. Vous ne pourrez plus voir cette clé après avoir cliqué sur Fermer. Un fichier CSV contenant la clé a été téléchargé.",
+      "Copiez et sauvegardez cette clé secrète dans Tracktor Pages. Vous ne pourrez plus voir cette clé après avoir cliqué sur Fermer. Un fichier CSV contenant la clé a été téléchargé.",
     token_copied: "Jeton copié dans le presse-papiers.",
     settings: {
       general: {

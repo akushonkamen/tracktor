@@ -420,7 +420,7 @@ export default {
   full_changelog: "Registro de cambios completo",
   support: "Soporte",
   forum: "Forum",
-  powered_by_plane_pages: "Desarrollado por Plane Pages",
+  powered_by_plane_pages: "Desarrollado por Tracktor Pages",
   please_select_at_least_one_invitation: "Por favor selecciona al menos una invitación.",
   please_select_at_least_one_invitation_description:
     "Por favor selecciona al menos una invitación para unirte al espacio de trabajo.",
@@ -1597,7 +1597,7 @@ export default {
     page_label: "{workspace} - Configuración general",
     key_created: "Clave creada",
     copy_key:
-      "Copia y guarda esta clave secreta en Plane Pages. No podrás ver esta clave después de hacer clic en Cerrar. Se ha descargado un archivo CSV que contiene la clave.",
+      "Copia y guarda esta clave secreta en Tracktor Pages. No podrás ver esta clave después de hacer clic en Cerrar. Se ha descargado un archivo CSV que contiene la clave.",
     token_copied: "Token copiado al portapapeles.",
     settings: {
       general: {

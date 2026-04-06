@@ -416,7 +416,7 @@ export default {
   full_changelog: "Повний журнал змін",
   support: "Підтримка",
   forum: "Forum",
-  powered_by_plane_pages: "Працює на Plane Pages",
+  powered_by_plane_pages: "Працює на Tracktor Pages",
   please_select_at_least_one_invitation: "Виберіть принаймні одне запрошення.",
   please_select_at_least_one_invitation_description:
     "Виберіть принаймні одне запрошення, щоб приєднатися до робочого простору.",
@@ -1613,7 +1613,7 @@ export default {
     page_label: "{workspace} - Загальні налаштування",
     key_created: "Ключ створено",
     copy_key:
-      "Скопіюйте й збережіть цей ключ для Plane Pages. Після закриття ви його більше не побачите. CSV-файл із ключем було завантажено.",
+      "Скопіюйте й збережіть цей ключ для Tracktor Pages. Після закриття ви його більше не побачите. CSV-файл із ключем було завантажено.",
     token_copied: "Токен скопійовано до буфера.",
     settings: {
       general: {
