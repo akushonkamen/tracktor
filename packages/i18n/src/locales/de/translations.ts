@@ -420,7 +420,7 @@ export default {
   full_changelog: "Vollständiges Änderungsprotokoll",
   support: "Support",
   forum: "Forum",
-  powered_by_plane_pages: "Bereitgestellt von Plane Pages",
+  powered_by_plane_pages: "Bereitgestellt von Tracktor Pages",
   please_select_at_least_one_invitation: "Bitte wählen Sie mindestens eine Einladung aus.",
   please_select_at_least_one_invitation_description:
     "Wählen Sie mindestens eine Einladung aus, um dem Arbeitsbereich beizutreten.",
@@ -583,7 +583,7 @@ export default {
       not_right_now: "Jetzt nicht",
       create_project: {
         title: "Projekt erstellen",
-        description: "Die meisten Dinge beginnen mit einem Projekt in Plane.",
+        description: "Die meisten Dinge beginnen mit einem Projekt in Tracktor.",
         cta: "Los geht’s",
       },
       invite_team: {
@@ -1593,7 +1593,7 @@ export default {
     page_label: "{workspace} - Allgemeine Einstellungen",
     key_created: "Schlüssel erstellt",
     copy_key:
-      "Kopieren Sie diesen Schlüssel und fügen Sie ihn in Plane Pages ein. Nach dem Schließen können Sie ihn nicht mehr sehen. Eine CSV-Datei mit dem Schlüssel wurde heruntergeladen.",
+      "Kopieren Sie diesen Schlüssel und fügen Sie ihn in Tracktor Pages ein. Nach dem Schließen können Sie ihn nicht mehr sehen. Eine CSV-Datei mit dem Schlüssel wurde heruntergeladen.",
     token_copied: "Token in die Zwischenablage kopiert.",
     settings: {
       general: {

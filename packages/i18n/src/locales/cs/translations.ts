@@ -409,7 +409,7 @@ export default {
   full_changelog: "Úplný změnový protokol",
   support: "Podpora",
   forum: "Forum",
-  powered_by_plane_pages: "Poháněno Plane Pages",
+  powered_by_plane_pages: "Poháněno Tracktor Pages",
   please_select_at_least_one_invitation: "Vyberte alespoň jednu pozvánku.",
   please_select_at_least_one_invitation_description:
     "Vyberte alespoň jednu pozvánku pro připojení k pracovnímu prostoru.",
@@ -1575,7 +1575,7 @@ export default {
     page_label: "{workspace} - Obecná nastavení",
     key_created: "Klíč vytvořen",
     copy_key:
-      "Zkopírujte a uložte tento klíč do Plane Pages. Po zavření jej neuvidíte. CSV soubor s klíčem byl stažen.",
+      "Zkopírujte a uložte tento klíč do Tracktor Pages. Po zavření jej neuvidíte. CSV soubor s klíčem byl stažen.",
     token_copied: "Token zkopírován do schránky.",
     settings: {
       general: {

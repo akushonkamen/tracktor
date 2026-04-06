@@ -413,7 +413,7 @@ export default {
   full_changelog: "Nhật ký thay đổi đầy đủ",
   support: "Hỗ trợ",
   forum: "Forum",
-  powered_by_plane_pages: "Được hỗ trợ bởi Plane Pages",
+  powered_by_plane_pages: "Được hỗ trợ bởi Tracktor Pages",
   please_select_at_least_one_invitation: "Vui lòng chọn ít nhất một lời mời.",
   please_select_at_least_one_invitation_description:
     "Vui lòng chọn ít nhất một lời mời để tham gia không gian làm việc.",
@@ -1584,7 +1584,7 @@ export default {
     page_label: "{workspace} - Cài đặt chung",
     key_created: "Đã tạo khóa",
     copy_key:
-      "Sao chép và lưu khóa này trong Plane Pages. Bạn sẽ không thể thấy khóa này sau khi đóng. Tệp CSV chứa khóa đã được tải xuống.",
+      "Sao chép và lưu khóa này trong Tracktor Pages. Bạn sẽ không thể thấy khóa này sau khi đóng. Tệp CSV chứa khóa đã được tải xuống.",
     token_copied: "Đã sao chép token vào bảng tạm.",
     settings: {
       general: {

@@ -404,7 +404,7 @@ export default {
   full_changelog: "전체 변경 로그",
   support: "지원",
   forum: "Forum",
-  powered_by_plane_pages: "Plane Pages 제공",
+  powered_by_plane_pages: "Tracktor Pages 제공",
   please_select_at_least_one_invitation: "최소 하나의 초대를 선택하세요.",
   please_select_at_least_one_invitation_description: "작업 공간에 참여하려면 최소 하나의 초대를 선택하세요.",
   we_see_that_someone_has_invited_you_to_join_a_workspace: "누군가가 작업 공간에 참여하도록 초대했습니다",
@@ -1567,7 +1567,7 @@ export default {
     page_label: "{workspace} - 일반 설정",
     key_created: "키 생성됨",
     copy_key:
-      "이 비밀 키를 Plane Pages에 복사하고 저장하세요. 닫기 버튼을 누른 후에는 이 키를 볼 수 없습니다. 키가 포함된 CSV 파일이 다운로드되었습니다.",
+      "이 비밀 키를 Tracktor Pages에 복사하고 저장하세요. 닫기 버튼을 누른 후에는 이 키를 볼 수 없습니다. 키가 포함된 CSV 파일이 다운로드되었습니다.",
     token_copied: "토큰이 클립보드에 복사되었습니다.",
     settings: {
       general: {
@@ -2149,7 +2149,7 @@ export default {
           comic: {
             title: "작업 항목은 Plane의 구성 요소입니다.",
             description:
-              "Plane UI 재설계, 회사 리브랜딩 또는 새로운 연료 주입 시스템 출시와 같은 작업 항목은 하위 작업 항목이 있을 가능성이 큽니다.",
+              "Tracktor UI 재설계, 회사 리브랜딩 또는 새로운 연료 주입 시스템 출시와 같은 작업 항목은 하위 작업 항목이 있을 가능성이 큽니다.",
           },
         },
       },

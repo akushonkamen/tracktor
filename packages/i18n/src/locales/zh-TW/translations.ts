@@ -398,7 +398,7 @@ export default {
   full_changelog: "完整更新日誌",
   support: "支援",
   forum: "Forum",
-  powered_by_plane_pages: "由 Plane Pages 提供",
+  powered_by_plane_pages: "由 Tracktor Pages 提供",
   please_select_at_least_one_invitation: "請至少選擇一個邀請。",
   please_select_at_least_one_invitation_description: "請至少選擇一個邀請加入工作區。",
   we_see_that_someone_has_invited_you_to_join_a_workspace: "我們發現有人邀請您加入工作區",
@@ -1558,7 +1558,7 @@ export default {
     label: "工作區設定",
     page_label: "{workspace} - 一般設定",
     key_created: "金鑰已建立",
-    copy_key: "複製並儲存此金鑰到 Plane Pages。關閉後您將無法看到此金鑰。已下載包含金鑰的 CSV 檔案。",
+    copy_key: "複製並儲存此金鑰到 Tracktor Pages。關閉後您將無法看到此金鑰。已下載包含金鑰的 CSV 檔案。",
     token_copied: "權杖已複製到剪貼簿。",
     settings: {
       general: {

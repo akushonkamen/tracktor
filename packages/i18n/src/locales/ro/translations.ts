@@ -1755,7 +1755,7 @@ export default {
       api_tokens: {
         title: "Nicio cheie secretă API creată",
         description:
-          "API-ul Plane poate fi folosit pentru a integra datele tale din Plane cu orice sistem extern. Creează o cheie secretă pentru a începe.",
+          "API-ul Plane poate fi folosit pentru a integra datele tale din Tracktor cu orice sistem extern. Creează o cheie secretă pentru a începe.",
       },
       webhooks: {
         title: "Niciun punctul de notificare (webhook) adăugat",

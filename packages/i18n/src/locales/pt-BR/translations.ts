@@ -416,7 +416,7 @@ export default {
   full_changelog: "Changelog completo",
   support: "Suporte",
   forum: "Forum",
-  powered_by_plane_pages: "Desenvolvido por Plane Pages",
+  powered_by_plane_pages: "Desenvolvido por Tracktor Pages",
   please_select_at_least_one_invitation: "Selecione pelo menos um convite.",
   please_select_at_least_one_invitation_description:
     "Selecione pelo menos um convite para entrar no espaço de trabalho.",
