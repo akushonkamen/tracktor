@@ -505,10 +505,10 @@ function viewLogs(){
                 5) viewSpecificLogs "beat-worker";;
                 6) viewSpecificLogs "migrator";;
                 7) viewSpecificLogs "proxy";;
-                8) viewSpecificLogs "plane-redis";;
-                9) viewSpecificLogs "plane-db";;
-                10) viewSpecificLogs "plane-minio";;
-                11) viewSpecificLogs "plane-mq";;
+                8) viewSpecificLogs "tracktor-redis";;
+                9) viewSpecificLogs "tracktor-db";;
+                10) viewSpecificLogs "tracktor-minio";;
+                11) viewSpecificLogs "tracktor-mq";;
                 0) askForAction;;
                 *) echo "INVALID SERVICE NAME SUPPLIED";;
             esac
@@ -524,10 +524,10 @@ function viewLogs(){
             beat-worker) viewSpecificLogs "beat-worker";;
             migrator) viewSpecificLogs "migrator";;
             proxy) viewSpecificLogs "proxy";;
-            redis) viewSpecificLogs "plane-redis";;
-            postgres) viewSpecificLogs "plane-db";;
-            minio) viewSpecificLogs "plane-minio";;
-            rabbitmq) viewSpecificLogs "plane-mq";;
+            redis) viewSpecificLogs "tracktor-redis";;
+            postgres) viewSpecificLogs "tracktor-db";;
+            minio) viewSpecificLogs "tracktor-minio";;
+            rabbitmq) viewSpecificLogs "tracktor-mq";;
             *) echo "INVALID SERVICE NAME SUPPLIED";;
         esac
     else

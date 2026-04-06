@@ -4,7 +4,7 @@ set -e
 
 DIST_DIR=${DIST_DIR:-./dist}
 CPU_ARCH=$(uname -m)
-IMAGE_NAME=${IMAGE_NAME:-makeplane/plane-aio-community}
+IMAGE_NAME=${IMAGE_NAME:-akushonkamen/tracktor-aio-community}
 
 
 # loop though all flags and set the variables
@@ -116,7 +116,7 @@ build_dist_files(){
     echo ""
     echo "docker build -t $IMAGE_NAME \\"
     echo "  -f $(pwd)/Dockerfile \\"
-    echo "  --build-arg PLANE_VERSION=$APP_RELEASE_VERSION \\"
+    echo "  --build-arg TRACKTOR_VERSION=$APP_RELEASE_VERSION \\"
     echo "  $(pwd)"
     echo ""
     echo "------------------------------------------------"

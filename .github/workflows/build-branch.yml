@@ -80,7 +80,7 @@ jobs:
             echo "BUILDX_DRIVER=cloud" >> $GITHUB_OUTPUT
             echo "BUILDX_VERSION=lab:latest" >> $GITHUB_OUTPUT
             echo "BUILDX_PLATFORMS=linux/amd64,linux/arm64" >> $GITHUB_OUTPUT
-            echo "BUILDX_ENDPOINT=makeplane/plane-dev" >> $GITHUB_OUTPUT
+            echo "BUILDX_ENDPOINT=akushonkamen/tracktor-dev" >> $GITHUB_OUTPUT
           else
             echo "BUILDX_DRIVER=docker-container" >> $GITHUB_OUTPUT
             echo "BUILDX_VERSION=latest" >> $GITHUB_OUTPUT
@@ -90,13 +90,13 @@ jobs:
           BR_NAME=$( echo "${{ env.TARGET_BRANCH }}" |sed 's/[^a-zA-Z0-9.-]//g')
           echo "TARGET_BRANCH=$BR_NAME" >> $GITHUB_OUTPUT
 
-          echo "DH_IMG_WEB=plane-frontend" >> $GITHUB_OUTPUT
-          echo "DH_IMG_SPACE=plane-space" >> $GITHUB_OUTPUT
-          echo "DH_IMG_ADMIN=plane-admin" >> $GITHUB_OUTPUT
-          echo "DH_IMG_LIVE=plane-live" >> $GITHUB_OUTPUT
-          echo "DH_IMG_BACKEND=plane-backend" >> $GITHUB_OUTPUT
-          echo "DH_IMG_PROXY=plane-proxy" >> $GITHUB_OUTPUT
-          echo "DH_IMG_AIO=plane-aio-community" >> $GITHUB_OUTPUT
+          echo "DH_IMG_WEB=tracktor-frontend" >> $GITHUB_OUTPUT
+          echo "DH_IMG_SPACE=tracktor-space" >> $GITHUB_OUTPUT
+          echo "DH_IMG_ADMIN=tracktor-admin" >> $GITHUB_OUTPUT
+          echo "DH_IMG_LIVE=tracktor-live" >> $GITHUB_OUTPUT
+          echo "DH_IMG_BACKEND=tracktor-backend" >> $GITHUB_OUTPUT
+          echo "DH_IMG_PROXY=tracktor-proxy" >> $GITHUB_OUTPUT
+          echo "DH_IMG_AIO=tracktor-aio-community" >> $GITHUB_OUTPUT
 
           echo "BUILD_TYPE=${{env.BUILD_TYPE}}" >> $GITHUB_OUTPUT
           BUILD_RELEASE=false
@@ -142,7 +142,7 @@ jobs:
     needs: [branch_build_setup]
     steps:
       - name: Admin Build and Push
-        uses: makeplane/actions/build-push@v1.4.0
+        uses: akushonkamen/actions/build-push@v1.4.0
         with:
           build-release: ${{ needs.branch_build_setup.outputs.build_release }}
           build-prerelease: ${{ needs.branch_build_setup.outputs.build_prerelease }}
@@ -164,7 +164,7 @@ jobs:
     needs: [branch_build_setup]
     steps:
       - name: Web Build and Push
-        uses: makeplane/actions/build-push@v1.4.0
+        uses: akushonkamen/actions/build-push@v1.4.0
         with:
           build-release: ${{ needs.branch_build_setup.outputs.build_release }}
           build-prerelease: ${{ needs.branch_build_setup.outputs.build_prerelease }}
@@ -186,7 +186,7 @@ jobs:
     needs: [branch_build_setup]
     steps:
       - name: Space Build and Push
-        uses: makeplane/actions/build-push@v1.4.0
+        uses: akushonkamen/actions/build-push@v1.4.0
         with:
           build-release: ${{ needs.branch_build_setup.outputs.build_release }}
           build-prerelease: ${{ needs.branch_build_setup.outputs.build_prerelease }}
@@ -208,7 +208,7 @@ jobs:
     needs: [branch_build_setup]
     steps:
       - name: Live Build and Push
-        uses: makeplane/actions/build-push@v1.4.0
+        uses: akushonkamen/actions/build-push@v1.4.0
         with:
           build-release: ${{ needs.branch_build_setup.outputs.build_release }}
           build-prerelease: ${{ needs.branch_build_setup.outputs.build_prerelease }}
@@ -230,7 +230,7 @@ jobs:
     needs: [branch_build_setup]
     steps:
       - name: Backend Build and Push
-        uses: makeplane/actions/build-push@v1.4.0
+        uses: akushonkamen/actions/build-push@v1.4.0
         with:
           build-release: ${{ needs.branch_build_setup.outputs.build_release }}
           build-prerelease: ${{ needs.branch_build_setup.outputs.build_prerelease }}
@@ -252,7 +252,7 @@ jobs:
     needs: [branch_build_setup]
     steps:
       - name: Proxy Build and Push
-        uses: makeplane/actions/build-push@v1.4.0
+        uses: akushonkamen/actions/build-push@v1.4.0
         with:
           build-release: ${{ needs.branch_build_setup.outputs.build_release }}
           build-prerelease: ${{ needs.branch_build_setup.outputs.build_prerelease }}
@@ -304,7 +304,7 @@ jobs:
           name: aio-assets-dist
 
       - name: AIO Build and Push
-        uses: makeplane/actions/build-push@v1.4.0
+        uses: akushonkamen/actions/build-push@v1.4.0
         with:
           build-release: ${{ needs.branch_build_setup.outputs.build_release }}
           build-prerelease: ${{ needs.branch_build_setup.outputs.build_prerelease }}
@@ -322,7 +322,7 @@ jobs:
           additional-assets: aio-assets-dist
           additional-assets-dir: ./deployments/aio/community/dist
           build-args: |
-            PLANE_VERSION=${{ steps.prepare_aio_assets.outputs.AIO_BUILD_VERSION }}
+            TRACKTOR_VERSION=${{ steps.prepare_aio_assets.outputs.AIO_BUILD_VERSION }}
 
   upload_build_assets:
     name: Upload Build Assets
