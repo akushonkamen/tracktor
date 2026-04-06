@@ -8,7 +8,7 @@ import * as React from "react";
 
 import type { ISvgIcons } from "../type";
 
-export function PlaneLockup({ width = "253", height = "53", className, color = "currentColor" }: ISvgIcons) {
+export function TracktorLockup({ width = "253", height = "53", className, color = "currentColor" }: ISvgIcons) {
   return (
     <svg
       width={width}
