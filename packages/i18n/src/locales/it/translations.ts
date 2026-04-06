@@ -414,7 +414,7 @@ export default {
   full_changelog: "Changelog completo",
   support: "Supporto",
   forum: "Forum",
-  powered_by_plane_pages: "Supportato da Plane Pages",
+  powered_by_plane_pages: "Supportato da Tracktor Pages",
   please_select_at_least_one_invitation: "Seleziona almeno un invito.",
   please_select_at_least_one_invitation_description: "Seleziona almeno un invito per unirti allo spazio di lavoro.",
   we_see_that_someone_has_invited_you_to_join_a_workspace:
@@ -578,7 +578,7 @@ export default {
       not_right_now: "Non ora",
       create_project: {
         title: "Crea un progetto",
-        description: "La maggior parte delle cose inizia con un progetto in Plane.",
+        description: "La maggior parte delle cose inizia con un progetto in Tracktor.",
         cta: "Inizia",
       },
       invite_team: {
@@ -1334,7 +1334,7 @@ export default {
       general: {
         title: "Panoramica dei tuoi progetti, attività e metriche",
         description:
-          "Benvenuto in Plane, siamo entusiasti di averti qui. Crea il tuo primo progetto e traccia i tuoi elementi di lavoro, e questa pagina si trasformerà in uno spazio che ti aiuta a progredire. Gli amministratori vedranno anche elementi che aiutano il team a progredire.",
+          "Benvenuto in Tracktor, siamo entusiasti di averti qui. Crea il tuo primo progetto e traccia i tuoi elementi di lavoro, e questa pagina si trasformerà in uno spazio che ti aiuta a progredire. Gli amministratori vedranno anche elementi che aiutano il team a progredire.",
         primary_button: {
           text: "Crea il tuo primo progetto",
           comic: {
@@ -1587,7 +1587,7 @@ export default {
     page_label: "{workspace} - Impostazioni generali",
     key_created: "Chiave creata",
     copy_key:
-      "Copia e salva questa chiave segreta in Plane Pages. Non potrai vederla dopo aver cliccato Chiudi. È stato scaricato un file CSV contenente la chiave.",
+      "Copia e salva questa chiave segreta in Tracktor Pages. Non potrai vederla dopo aver cliccato Chiudi. È stato scaricato un file CSV contenente la chiave.",
     token_copied: "Token copiato negli appunti.",
     settings: {
       general: {
@@ -1755,7 +1755,7 @@ export default {
       api_tokens: {
         title: "Nessun token API creato",
         description:
-          "Le API di Plane possono essere utilizzate per integrare i tuoi dati in Plane con qualsiasi sistema esterno. Crea un token per iniziare.",
+          "Le API di Plane possono essere utilizzate per integrare i tuoi dati in Tracktor con qualsiasi sistema esterno. Crea un token per iniziare.",
       },
       webhooks: {
         title: "Nessun webhook aggiunto",
@@ -2174,7 +2174,7 @@ export default {
         primary_button: {
           text: "Crea il tuo primo elemento di lavoro",
           comic: {
-            title: "Gli elementi di lavoro sono i mattoni fondamentali in Plane.",
+            title: "Gli elementi di lavoro sono i mattoni fondamentali in Tracktor.",
             description:
               "Ridisegna l'interfaccia di Plane, rebranding dell'azienda o lancia il nuovo sistema di iniezione del carburante sono esempi di elementi di lavoro che probabilmente hanno sotto-elementi.",
           },
@@ -2284,7 +2284,7 @@ export default {
         title:
           "Scrivi una nota, un documento o una vera e propria base di conoscenza. Fai partire Galileo, l'assistente AI di Plane, per aiutarti a iniziare",
         description:
-          "Le pagine sono spazi per appunti in Plane. Prendi note durante le riunioni, formattale facilmente, inserisci elementi di lavoro, disponili usando una libreria di componenti e tienili tutti nel contesto del tuo progetto. Per velocizzare qualsiasi documento, invoca Galileo, l'IA di Plane, con una scorciatoia o con il clic di un pulsante.",
+          "Le pagine sono spazi per appunti in Tracktor. Prendi note durante le riunioni, formattale facilmente, inserisci elementi di lavoro, disponili usando una libreria di componenti e tienili tutti nel contesto del tuo progetto. Per velocizzare qualsiasi documento, invoca Galileo, l'IA di Plane, con una scorciatoia o con il clic di un pulsante.",
         primary_button: {
           text: "Crea la tua prima pagina",
         },

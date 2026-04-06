@@ -407,7 +407,7 @@ export default {
   full_changelog: "Pełny dziennik zmian",
   support: "Wsparcie",
   forum: "Forum",
-  powered_by_plane_pages: "Oparte na Plane Pages",
+  powered_by_plane_pages: "Oparte na Tracktor Pages",
   please_select_at_least_one_invitation: "Wybierz co najmniej jedno zaproszenie.",
   please_select_at_least_one_invitation_description:
     "Wybierz co najmniej jedno zaproszenie, aby dołączyć do przestrzeni roboczej.",
@@ -1578,7 +1578,7 @@ export default {
     page_label: "{workspace} - Ustawienia ogólne",
     key_created: "Klucz utworzony",
     copy_key:
-      "Skopiuj i zapisz ten klucz w Plane Pages. Po zamknięciu nie będzie widoczny ponownie. Plik CSV z kluczem został pobrany.",
+      "Skopiuj i zapisz ten klucz w Tracktor Pages. Po zamknięciu nie będzie widoczny ponownie. Plik CSV z kluczem został pobrany.",
     token_copied: "Token skopiowano do schowka.",
     settings: {
       general: {

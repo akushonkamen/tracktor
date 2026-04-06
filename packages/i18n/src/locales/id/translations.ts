@@ -412,7 +412,7 @@ export default {
   full_changelog: "Changelog lengkap",
   support: "Dukungan",
   forum: "Forum",
-  powered_by_plane_pages: "Ditenagai oleh Plane Pages",
+  powered_by_plane_pages: "Ditenagai oleh Tracktor Pages",
   please_select_at_least_one_invitation: "Silakan pilih setidaknya satu undangan.",
   please_select_at_least_one_invitation_description:
     "Silakan pilih setidaknya satu undangan untuk bergabung dengan ruang kerja.",

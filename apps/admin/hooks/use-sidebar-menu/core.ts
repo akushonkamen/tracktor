@@ -6,7 +6,7 @@
 
 import { Image, BrainCog, Cog, Mail } from "lucide-react";
 // plane imports
-import { LockIcon, WorkspaceIcon } from "@plane/propel/icons";
+import { LockIcon, WorkspaceIcon } from "@tracktor/propel/icons";
 // types
 import type { TSidebarMenuItem } from "./types";
 
@@ -45,7 +45,7 @@ export const coreSidebarMenuLinks: Record<TCoreSidebarMenuKey, TSidebarMenuItem>
   },
   image: {
     Icon: Image,
-    name: "Images in Plane",
+    name: "Images in Tracktor",
     description: "Allow third-party image libraries.",
     href: `/image/`,
   },

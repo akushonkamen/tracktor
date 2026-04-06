@@ -399,7 +399,7 @@ export default {
   full_changelog: "完整更新日志",
   support: "支持",
   forum: "Forum",
-  powered_by_plane_pages: "由Plane Pages提供支持",
+  powered_by_plane_pages: "由Tracktor Pages提供支持",
   please_select_at_least_one_invitation: "请至少选择一个邀请。",
   please_select_at_least_one_invitation_description: "请至少选择一个加入工作区的邀请。",
   we_see_that_someone_has_invited_you_to_join_a_workspace: "我们看到有人邀请您加入工作区",
@@ -1557,7 +1557,7 @@ export default {
     label: "工作区设置",
     page_label: "{workspace} - 常规设置",
     key_created: "密钥已创建",
-    copy_key: "复制并将此密钥保存在 Plane Pages 中。关闭后您将无法看到此密钥。包含密钥的 CSV 文件已下载。",
+    copy_key: "复制并将此密钥保存在 Tracktor Pages 中。关闭后您将无法看到此密钥。包含密钥的 CSV 文件已下载。",
     token_copied: "令牌已复制到剪贴板。",
     settings: {
       general: {
