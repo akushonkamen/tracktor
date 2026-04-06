@@ -1,0 +1,114 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1775490789650,
+  "projectRoot": "/Users/yp1017/projects/plane",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": ">=22.18.0",
+        "confidence": "high",
+        "markers": ["package.json"]
+      }
+    ],
+    "frameworks": [],
+    "packageManager": "pnpm",
+    "runtime": "Node.js 22.18.0"
+  },
+  "build": {
+    "buildCommand": "pnpm build",
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": "pnpm dev",
+    "scripts": {
+      "build": "turbo run build",
+      "dev": "turbo run dev --concurrency=18",
+      "start": "turbo run start",
+      "clean": "turbo run clean && rm -rf .turbo && rm -rf .next && rm -rf node_modules && rm -rf dist",
+      "fix": "turbo run fix",
+      "fix:format": "turbo run fix:format",
+      "fix:lint": "turbo run fix:lint",
+      "check": "turbo run check",
+      "check:lint": "turbo run check:lint",
+      "check:format": "turbo run check:format",
+      "check:types": "turbo run check:types",
+      "prepare": "husky"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": true,
+    "workspaces": [],
+    "mainDirectories": ["docs"],
+    "gitBranches": {
+      "defaultBranch": "preview",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "apps": {
+      "path": "apps",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1775490789633,
+      "keyFiles": []
+    },
+    "deployments": {
+      "path": "deployments",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1775490789633,
+      "keyFiles": []
+    },
+    "docs": {
+      "path": "docs",
+      "purpose": "Documentation",
+      "fileCount": 1,
+      "lastAccessed": 1775490789635,
+      "keyFiles": ["linting.md"]
+    },
+    "packages": {
+      "path": "packages",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1775490789635,
+      "keyFiles": []
+    },
+    "state": {
+      "path": "state",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1775490789635,
+      "keyFiles": ["cancel-signal-state.json"]
+    },
+    "apps/api": {
+      "path": "apps/api",
+      "purpose": "API routes",
+      "fileCount": 13,
+      "lastAccessed": 1775490789636,
+      "keyFiles": ["Dockerfile.api", "Dockerfile.dev", "manage.py"]
+    },
+    "packages/services": {
+      "path": "packages/services",
+      "purpose": "Business logic services",
+      "fileCount": 4,
+      "lastAccessed": 1775490789636,
+      "keyFiles": ["package.json", "tsconfig.json", "tsdown.config.ts"]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "package.json",
+      "accessCount": 3,
+      "lastAccessed": 1775491122348,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

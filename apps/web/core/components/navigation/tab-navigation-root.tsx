@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Tracktor Contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -109,7 +109,7 @@ export const TabNavigationRoot = observer(function TabNavigationRoot(props: TTab
   // Filter and sort navigation items
   const allNavigationItems = navigationItems
     .filter((item) => item.shouldRender)
-    .sort((a, b) => a.sortOrder - b.sortOrder);
+    .toSorted((a, b) => a.sortOrder - b.sortOrder);
 
   // Split items into two categories:
   // 1. visibleNavigationItems: Items NOT user-hidden (may still overflow due to space)

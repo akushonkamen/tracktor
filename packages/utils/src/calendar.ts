@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Tracktor Contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -86,7 +86,7 @@ export const getOrderedDays = <T>(
   getDayIndex: (item: T) => number,
   startOfWeek: EStartOfTheWeek = EStartOfTheWeek.SUNDAY
 ): T[] =>
-  [...items].sort((a, b) => {
+  [...items].toSorted((a, b) => {
     const dayA = (7 + getDayIndex(a) - startOfWeek) % 7;
     const dayB = (7 + getDayIndex(b) - startOfWeek) % 7;
     return dayA - dayB;

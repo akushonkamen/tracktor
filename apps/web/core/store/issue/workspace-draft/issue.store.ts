@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Tracktor Contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -292,7 +292,7 @@ export class WorkspaceDraftIssues implements IWorkspaceDraftIssues {
         set(this.issuesMap, [issueId], {
           ...issueBeforeUpdate,
           ...payload,
-          ...{ updated_at: getCurrentDateTimeInISO() },
+          updated_at: getCurrentDateTimeInISO(),
         });
       });
       const response = await workspaceDraftService.updateIssue(workspaceSlug, issueId, payload);

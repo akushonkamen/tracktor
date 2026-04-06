@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Tracktor Contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -37,7 +37,7 @@ export function CommandRenderer(props: Props) {
     {} as Record<TPowerKCommandGroup, TPowerKCommandConfig[]>
   );
 
-  const sortedGroups = Object.keys(commandsByGroup).sort((a, b) => {
+  const sortedGroups = Object.keys(commandsByGroup).toSorted((a, b) => {
     const aPriority = POWER_K_GROUP_PRIORITY[a as TPowerKCommandGroup];
     const bPriority = POWER_K_GROUP_PRIORITY[b as TPowerKCommandGroup];
     return aPriority - bPriority;

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Tracktor Contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -8,7 +8,7 @@ import tlds from "./tlds";
 
 const PROTOCOL_REGEX = /^[a-zA-Z]+:\/\//;
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const LOCALHOST_ADDRESSES = ["localhost", "127.0.0.1", "0.0.0.0"];
+const LOCALHOST_ADDRESSES = new Set(["localhost", "127.0.0.1", "0.0.0.0"]);
 const HTTP_PROTOCOL = "http://";
 const MAILTO_PROTOCOL = "mailto:";
 const DEFAULT_PROTOCOL = HTTP_PROTOCOL;
@@ -75,7 +75,7 @@ export function validateIPAddress(ip: string): {
  */
 export function isLocalhost(url: string): boolean {
   const hostname = extractHostname(url);
-  return LOCALHOST_ADDRESSES.includes(hostname);
+  return LOCALHOST_ADDRESSES.has(hostname);
 }
 
 /**

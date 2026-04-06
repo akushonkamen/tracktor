@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Tracktor Contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -28,7 +28,7 @@ type Props = {
   totalProjects: number;
 };
 
-const MEMBERS_FILTERS = ["lead", "members"];
+const MEMBERS_FILTERS = new Set(["lead", "members"]);
 const DATE_FILTERS = ["created_at"];
 
 export function ProjectAppliedFiltersList(props: Props) {
@@ -76,7 +76,7 @@ export function ProjectAppliedFiltersList(props: Props) {
                   values={value}
                 />
               )}
-              {MEMBERS_FILTERS.includes(filterKey) && (
+              {MEMBERS_FILTERS.has(filterKey) && (
                 <AppliedMembersFilters
                   editable={isEditingAllowed}
                   handleRemove={(val) => handleRemoveFilter(filterKey, val)}

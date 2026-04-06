@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Tracktor Contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -14,7 +14,6 @@ export type TExtendedPageInstance = TPageExtended & {
 
 export class ExtendedBasePage implements TExtendedPageInstance {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  constructor(store: RootStore, page: TPage, services: TBasePageServices) {}
 
   get asJSONExtended(): TExtendedPageInstance["asJSONExtended"] {
     return {};
